@@ -1,0 +1,10 @@
+
+<div><h1><span class="badge badge-secondary">Angular NGRX Starter Template</span></h1></div>
+
+<div class="container-fluid">
+
+  <app-zipcode-entry (zipAdded)="addLocation($event)"> </app-zipcode-entry>
+  <app-current-conditions [zipcodes]="zipcodes" [currentConditions]="currentConditions" (zipRemoved)="removeZip($event)">
+
+  </app-current-conditions>
+</div>

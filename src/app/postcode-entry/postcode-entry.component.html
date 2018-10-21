@@ -1,0 +1,8 @@
+<div class="well">
+  <h2>Enter a Post Code:</h2>
+  <input type="text" #zipcode placeholder="PostCode" class="form-control">
+  <br>
+  <button class="btn btn-primary" (click)="postCodeAdded.emit(postCode.value)" >
+    Add Post Code
+  </button>
+</div>
